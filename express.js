@@ -40,7 +40,7 @@ app.get('/weather',(req,res) => {
         if (error) {
             var jsonOutput = {'error': error};
         } else {
-            var jsonOutput = {'City': req.query.address,'Temperature': (9/5*response+32)+' Degrees F'};
+            var jsonOutput = {'City': req.query.address,'Temperature': (9/5*response+32)+' Degrees F/'+response+' Degrees C'};
         };
         res.send(jsonOutput);
     });
