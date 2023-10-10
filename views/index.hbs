@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Main Page</title>
+    <link rel="icon" href="/sun.small.cloud.png">
+    <link rel='stylesheet' href='/styles.css'>
+</head>
+
+<body>
+    <div class="sticky-footer">
+        {{>header}}
+        <form>
+            <p>Search weather by inputting a location below</p>
+            <input placeholder="location">
+            <button>Search</button>
+        </form>
+        <p id="message-box"></p>
+    </div>
+    {{>footer}}
+    <script src='/app.js'></script>
+</body>
+
+</html>
